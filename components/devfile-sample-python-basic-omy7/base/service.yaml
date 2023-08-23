@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: devfile-sample-python-basic-omy7
     app.kubernetes.io/part-of: test-app-51
   name: devfile-sample-python-basic-omy7
-  namespace: lpardo-tenant
 spec:
   ports:
   - port: 8081

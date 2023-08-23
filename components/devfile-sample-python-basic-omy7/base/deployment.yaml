@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: devfile-sample-python-basic-omy7
     app.kubernetes.io/part-of: test-app-51
   name: devfile-sample-python-basic-omy7
-  namespace: lpardo-tenant
 spec:
   replicas: 1
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: python-app
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-omy7
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads-stage/lpardo-tenant/test-app-51/devfile-sample-python-basic-omy7@sha256:4bfa749f676b481da4b12aa823c2b2bccf25107e65db3533b11c26ac80096c57
         name: my-python
         ports:
         - containerPort: 8081
