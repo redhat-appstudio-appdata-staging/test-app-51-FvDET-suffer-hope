@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-omy7
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/lpardo-tenant/test-app-51/devfile-sample-python-basic-omy7@sha256:4bfa749f676b481da4b12aa823c2b2bccf25107e65db3533b11c26ac80096c57
+        name: my-python
+        resources: {}
+status: {}
